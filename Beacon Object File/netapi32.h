@@ -1,0 +1,35 @@
+#include <dsgetdc.h>
+
+WINBASEAPI DWORD WINAPI NETAPI32$NetUserSetInfo(LPCWSTR servername, LPCWSTR username, DWORD level, LPBYTE buf, LPDWORD parm_err);
+WINBASEAPI DWORD WINAPI NETAPI32$NetUserModalsGet(LPCWSTR servername, DWORD level, LPBYTE* bufptr);
+WINBASEAPI DWORD WINAPI NETAPI32$NetUserGetLocalGroups(LPCWSTR servername, LPCWSTR username, DWORD level, DWORD flags, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries);
+WINBASEAPI DWORD WINAPI NETAPI32$NetUserGetInfo(LPCWSTR servername, LPCWSTR username, DWORD level, LPBYTE* bufptr);
+WINBASEAPI DWORD WINAPI NETAPI32$NetUserGetGroups(LPCWSTR servername, LPCWSTR username, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries);
+WINBASEAPI DWORD WINAPI NETAPI32$NetUserEnum(LPCWSTR servername, DWORD level, DWORD filter, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, LPDWORD resume_handle);
+WINBASEAPI DWORD WINAPI NETAPI32$NetShareEnum(LMSTR servername, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, LPDWORD resume_handle);
+WINBASEAPI DWORD WINAPI NETAPI32$NetSessionEnum(LPCWSTR servername, LPCWSTR UncClientName, LPCWSTR username, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, LPDWORD resumehandle);
+WINBASEAPI DWORD WINAPI NETAPI32$NetServerEnum(LMCSTR servername, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, DWORD servertype, LMCSTR domain, LPDWORD resume_handle);
+WINBASEAPI DWORD WINAPI NETAPI32$NetQueryDisplayInformation(LPCWSTR ServerName, DWORD Level, DWORD Index, DWORD EntriesRequested, DWORD PreferredMaximumLength, LPDWORD ReturnedEntryCount, PVOID* SortedBuffer);
+WINBASEAPI DWORD WINAPI NETAPI32$NetLocalGroupGetMembers(LPCWSTR servername, LPCWSTR localgroupname, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, PDWORD_PTR resumehandle);
+WINBASEAPI DWORD WINAPI NETAPI32$NetLocalGroupEnum(LPCWSTR servername, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, PDWORD_PTR resumehandle);
+WINBASEAPI DWORD WINAPI NETAPI32$NetGroupGetUsers(LPCWSTR servername, LPCWSTR groupname, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, PDWORD_PTR ResumeHandle);
+WINBASEAPI DWORD WINAPI NETAPI32$NetGetAnyDCName(LPCWSTR servername, LPCWSTR domainname, LPBYTE* bufptr);
+WINBASEAPI DWORD WINAPI NETAPI32$NetApiBufferFree(LPVOID Buffer);
+WINBASEAPI DWORD WINAPI NETAPI32$DsGetDcNameW(LPCWSTR ComputerName, LPCWSTR DomainName, GUID* DomainGuid, LPCWSTR SiteName, ULONG Flags, PDOMAIN_CONTROLLER_INFOW* DomainControllerInfo);
+WINBASEAPI DWORD WINAPI NETAPI32$DsGetDcNameA(LPCSTR ComputerName, LPCSTR DomainName, GUID* DomainGuid, LPCSTR SiteName, ULONG Flags, PDOMAIN_CONTROLLER_INFOA* DomainControllerInfo);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetUserSetInfo(LPCWSTR servername, LPCWSTR username, DWORD level, LPBYTE buf, LPDWORD parm_err);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetUserModalsGet(LPCWSTR servername, DWORD level, LPBYTE* bufptr);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetUserGetLocalGroups(LPCWSTR servername, LPCWSTR username, DWORD level, DWORD flags, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetUserGetInfo(LPCWSTR servername, LPCWSTR username, DWORD level, LPBYTE* bufptr);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetUserGetGroups(LPCWSTR servername, LPCWSTR username, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetUserEnum(LPCWSTR servername, DWORD level, DWORD filter, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, LPDWORD resume_handle);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetShareEnum(LMSTR servername, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, LPDWORD resume_handle);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetSessionEnum(LPCWSTR servername, LPCWSTR UncClientName, LPCWSTR username, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, LPDWORD resumehandle);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetServerEnum(LMCSTR servername, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, DWORD servertype, LMCSTR domain, LPDWORD resume_handle);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetQueryDisplayInformation(LPCWSTR ServerName, DWORD Level, DWORD Index, DWORD EntriesRequested, DWORD PreferredMaximumLength, LPDWORD ReturnedEntryCount, PVOID* SortedBuffer);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetLocalGroupGetMembers(LPCWSTR servername, LPCWSTR localgroupname, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, PDWORD_PTR resumehandle);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetLocalGroupEnum(LPCWSTR servername, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, PDWORD_PTR resumehandle);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetGroupGetUsers(LPCWSTR servername, LPCWSTR groupname, DWORD level, LPBYTE* bufptr, DWORD prefmaxlen, LPDWORD entriesread, LPDWORD totalentries, PDWORD_PTR ResumeHandle);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetGetAnyDCName(LPCWSTR servername, LPCWSTR domainname, LPBYTE* bufptr);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$NetApiBufferFree(LPVOID Buffer);
+DECLSPEC_IMPORT DWORD WINAPI NETAPI32$DsGetDcNameA(LPVOID, LPVOID, LPVOID, LPVOID, ULONG, LPVOID);

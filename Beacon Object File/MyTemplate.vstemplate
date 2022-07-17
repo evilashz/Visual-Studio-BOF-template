@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>BOF(Beacon Object File)</Name>
+    <Description>Create Cobalt Strike Beacon Object Files. Author: @yas_o_h</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Beacon Object File</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.jpg</Icon>
+    <PreviewImage>__PreviewImage.jpg</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="scheduled-tasks.vcxproj" File="scheduled-tasks.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">scheduled-tasks.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="beacon.h">beacon.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="bofdefs.h">bofdefs.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="advapi32.h">advapi32.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="netapi32.h">netapi32.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="certcli.h">certcli.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="kernel32.h">kernel32.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="mcvcrt.h">mcvcrt.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="netapi32.h">netapi32.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="others.h">others.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="user32.h">user32.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="wldap32.h">wldap32.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ws2_32.h">ws2_32.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Source.c">Source.c</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="strip_bof.ps1">RESOURCES\strip_bof.ps1</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
