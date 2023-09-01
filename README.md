@@ -1,11 +1,12 @@
 # Visual-Studio-BOF-template
- Simple add defines of Visual-Studio-BOF-template
 
+more convenient to develop BOF use visual studio
 
+![image](https://github.com/evilashz/Visual-Studio-BOF-template/assets/50722929/49521e1e-081d-4db8-bfa1-d990be696942)
 
-Added some API definitions, and supports tool set V143, expect to PR to improve our BOF development.::laughing:
+## reference 
+https://www.cobaltstrike.com/blog/simplifying-bof-development
 
+https://github.com/securifybv/Visual-Studio-BOF-template
 
-
-usage:https://github.com/securifybv/Visual-Studio-BOF-template
 
