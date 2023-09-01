@@ -12,7 +12,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="beacon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,34 +24,6 @@
     <ClInclude Include="bofdefs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-
-    <ClInclude Include="advapi32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="certcli.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="kernel32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mcvcrt.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="netapi32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="others.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="user32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="wldap32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ws2_32.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>             
   </ItemGroup>
   <ItemGroup>
     <Text Include="resources\strip_bof.ps1">

@@ -29,10 +29,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{$guid1$}</ProjectGuid>
+    <ProjectGuid>{6C7A5BE5-826D-46E1-B732-3869D8E322E6}</ProjectGuid>
     <RootNamespace>$safeprojectname$</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>scheduled-tasks</ProjectName>
+    <ProjectName>examplebof</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -262,20 +262,12 @@ powershell -ExecutionPolicy Unrestricted -command "&amp; { . '$(SolutionDir)$(Pr
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.c" />
+    <ClCompile Include="beacon.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="beacon.h" />
     <ClInclude Include="bofdefs.h" />
-    <ClInclude Include="advapi32.h" />
-    <ClInclude Include="netapi32.h" />
-    <ClInclude Include="certcli.h" />
-    <ClInclude Include="kernel32.h" />
-    <ClInclude Include="mcvcrt.h" />
-    <ClInclude Include="others.h" />
-    <ClInclude Include="user32.h" />
-    <ClInclude Include="wldap32.h" />
-    <ClInclude Include="ws2_32.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="resources\strip_bof.ps1" Visible="false" />
