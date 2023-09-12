@@ -13,15 +13,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="beacon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="beacon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="bofdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="beacon-debug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

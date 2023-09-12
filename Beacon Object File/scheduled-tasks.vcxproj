@@ -29,10 +29,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6C7A5BE5-826D-46E1-B732-3869D8E322E6}</ProjectGuid>
+    <ProjectGuid>{A6D55943-1A47-485A-81A2-A2B1CA6A5D73}</ProjectGuid>
     <RootNamespace>$safeprojectname$</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>examplebof</ProjectName>
+    <ProjectName>scheduled-tasks</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -179,6 +179,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>false</ConformanceMode>
       <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -219,6 +221,8 @@
       <FavorSizeOrSpeed>
       </FavorSizeOrSpeed>
       <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
     </ClCompile>
     <PostBuildEvent>
       <Command>xcopy /y "$(SolutionDir)$(ProjectName)\intermediary\$(Configuration)\$(Platform)\source.obj" "$(SolutionDir)bin\$(Configuration)\$(ProjectName).x64.o*";
@@ -262,10 +266,10 @@ powershell -ExecutionPolicy Unrestricted -command "&amp; { . '$(SolutionDir)$(Pr
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="beacon.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="beacon-debug.h" />
     <ClInclude Include="beacon.h" />
     <ClInclude Include="bofdefs.h" />
   </ItemGroup>
